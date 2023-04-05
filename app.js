@@ -24,7 +24,6 @@ search.addEventListener('click', () => {
                 error404.classList.add('fadeIn');
                 return;
             }
-
             error404.style.display = 'none';
             error404.classList.remove('fadeIn');
 
@@ -58,7 +57,6 @@ search.addEventListener('click', () => {
                 default:
                     image.src = '';
             }
-
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
@@ -69,9 +67,5 @@ search.addEventListener('click', () => {
             weatherBox.classList.add('fadeIn');
             weatherDetails.classList.add('fadeIn');
             container.style.height = '590px';
-
-
         });
-
-
 });
